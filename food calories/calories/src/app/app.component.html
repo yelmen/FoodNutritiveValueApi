@@ -1,0 +1,35 @@
+<div class="upper">
+    <div class="inputsection">
+      <h1>Search any food's calories</h1>
+      <form action="">
+      <input type="text" name ="enteredFood" [(ngModel)]="enteredFood">
+    </form>
+      <button mat-raised-button color="accent" (click)="onSubmit(enteredFood)" type="submit">Search</button>
+  </div>
+</div>
+<div class="result">
+  <div class="secondary">
+  <div class="card">
+    <img class="raptiye" src="../assets//ikinciraptiye-removebg-preview.png" alt="">
+    <h1 class="foodname">{{foodmodel.items[0].name}}</h1>
+    <div class="columns">
+      <div class="column">
+        <h3>Serving Size (g): {{foodmodel.items[0].serving_size_g}}</h3> <br>
+        <h3>Sugar(g): {{foodmodel.items[0].sugar_g}}</h3> <br>
+        <h3>Fiber(g): {{foodmodel.items[0].fiber_g}}</h3> <br>
+        <h3>Sodium (g): {{foodmodel.items[0].sodium_mg}}</h3> <br>
+        <h3>Potassium (g): {{foodmodel.items[0].potassium_mg}}</h3> <br>
+      </div>
+      <div class="column">
+        <h3>Fat saturated (g): {{foodmodel.items[0].fat_saturated_g}}</h3> <br>
+        <h3>Fat Total (g): {{foodmodel.items[0].fat_total_g}}</h3> <br>
+        <h3>Cholesterol (mg): {{foodmodel.items[0].cholesterol_mg}}</h3> <br>
+        <h3>Protein (g): {{foodmodel.items[0].protein_g}}</h3> <br>
+        <h3>Carbonhydrates total (g): {{foodmodel.items[0].carbohydrates_total_g}}</h3> <br>
+        <h3>Calories :{{foodmodel.items[0].calories}}</h3>
+      </div>
+    </div>
+  </div>
+  </div>
+</div>
+

@@ -1,0 +1,97 @@
+*{
+  background-attachment: fixed;
+}
+.upper{
+  background-image: url(../assets//trythiss.jpg);
+  background-repeat: no-repeat;
+  background-size:cover;
+  background-position: center;
+  height: 900px;
+  width:100%;
+}
+.inputsection{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 700px;
+  flex-direction: column;
+}
+h1{
+  font-size: 34px;
+  animation: color-change 3s infinite;
+  font-weight: 500;
+}
+@keyframes color-change {
+  100% { color: rgb(157, 255, 0); }
+  100% { color: rgb(0, 128, 73); }
+  100% { color:rgb(85, 255, 0); }
+  100% { color:rgb(0, 76, 255); }
+}
+input{
+  width:350px;
+  height:33px;
+  border: 1px solid white;
+  border-radius:12px;
+  background-color: transparent;
+  padding: 10px 10px;
+  margin-top:25px;
+  font-size: 23px;
+  color: white;
+  font-weight: 700;
+
+}
+input:focus{
+  border:solid 1px white;
+  font-size: 23px;
+  color: black;
+  font-weight: 700;
+  outline: none;
+}
+button{
+  margin-top: 25px;
+}
+.secondary{
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ height:400px;
+}
+.columns{
+  height: 400px;
+  width:600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+}
+.column{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.foodname{
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  margin-top: 25px;
+  margin-bottom:2px;
+}
+.card{
+  margin-bottom:50px;
+}
+.result{
+  background-image: url(../assets/background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height:100%
+}
+.raptiye{
+  width: 100px;
+  height:150px;
+  height: fit-content;
+    padding-right: 34px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+}
